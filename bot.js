@@ -1,8 +1,5 @@
 const Discord = require('discord.js');
-
 const client = new Discord.Client();
-
- 
 
 client.on('ready', () => {
 
@@ -10,16 +7,11 @@ client.on('ready', () => {
 
 });
 
- 
-
 client.on('message', message => {
-
-	var msg
+	var msg = message.content.toLowerCase();
     if (msg === 'ice cream' || msg === 'ice cream man') {
-
 		const attachment = new MessageAttachment('https://raw.githubusercontent.com/EnAppelsin/IceCreamMan/master/ICM.png')
        message.reply('ICE CREAM MAN', attachment);
-
        }
 
 });
