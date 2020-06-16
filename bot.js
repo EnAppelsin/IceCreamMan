@@ -10,7 +10,7 @@ client.on('ready', () => {
 client.on('message', message => {
 	var msg = message.content.toLowerCase();
     if (msg === 'ice cream' || msg === 'ice cream man') {
-		const attachment = new MessageAttachment('https://raw.githubusercontent.com/EnAppelsin/IceCreamMan/master/ICM.png')
+		const attachment = new Discord.MessageAttachment('https://raw.githubusercontent.com/EnAppelsin/IceCreamMan/master/ICM.png')
        message.reply('ICE CREAM MAN', attachment);
        }
 
