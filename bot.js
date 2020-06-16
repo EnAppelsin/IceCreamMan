@@ -8,6 +8,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
+	if(message.author.bot) return;
 	var msg = message.content.toLowerCase();
     if (msg === 'ice cream' || msg === 'ice cream man') {
 		const attachment = new Discord.MessageAttachment('https://raw.githubusercontent.com/EnAppelsin/IceCreamMan/master/ICM.png')
